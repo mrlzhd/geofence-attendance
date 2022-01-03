@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/login_bk1"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:text="@string/Hello_Text"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/hello2"
+        android:text="@string/Hello_Text2"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        app:borderColor="#7EF463"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/et_firstIC"
+            android:hint="Matric Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        app:borderColor="#7EF463"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_firstPass"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+    <android.widget.Button
+        android:layout_marginRight="20dp"
+        android:textColor="#fff"
+        android:id="@+id/btn_changefirst"
+        android:text="Register"
+        android:padding="10dp"
+        android:layout_gravity="right"
+        android:background="@drawable/login_button_bk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

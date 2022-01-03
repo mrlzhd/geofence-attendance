@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:textColor="#FF9800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/loginHeader"
+        android:text="Login"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        app:borderColor="#7EF463"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:inputType="text"
+            android:hint="Matric Number"
+            android:id="@+id/et_loginIC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        app:borderColor="#7EF463"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp">
+
+        <EditText
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:id="@+id/et_loginPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/remember_me_chkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Remember Me"
+        />
+
+    <android.widget.Button
+        android:background="@drawable/login_button_bk"
+        style="@style/loginButton"
+        android:id="@+id/btn_login2"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="right"
+        android:text="Login" />
+
+    <TextView
+        android:gravity="right"
+        android:id="@+id/tv_back"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="Back to main page"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+</LinearLayout>

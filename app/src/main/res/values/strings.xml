@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GeoFence Attendance</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="Hello_Text">Welcome to ..</string>
+    <string name="Hello_Text2">Please register using matric number</string>
+    <string name="register_ins">Please select your class from the list below and click submit</string>
+</resources>
