@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GeoFencing">
-        <activity android:name=".ClassHistoryActivity"></activity>
+        <activity android:name=".GetDataActivity"></activity>
+        <activity android:name=".ClassHistoryActivity" />
         <activity android:name=".ClassListDetails" />
         <activity android:name=".RegisterClassActivity" />
         <activity android:name=".LoginActivity" />

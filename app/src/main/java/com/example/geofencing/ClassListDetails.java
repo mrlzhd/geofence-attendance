@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.geofencing.Model.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,6 +35,9 @@ public class ClassListDetails extends AppCompatActivity {
         btn_gotoMapDetails = findViewById(R.id.btn_gotoMapDetails);
 
         btn_gotoMapDetails.setVisibility(View.INVISIBLE);
+
+
+        String currentUser = Prevalent.currentOnlineUser.getMatric();
 
 
 
