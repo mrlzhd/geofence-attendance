@@ -77,6 +77,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
 
 
+
+
         Dexter.withActivity(this)
                 .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
                 .withListener(new PermissionListener() {
@@ -301,7 +303,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onKeyEntered(String key, GeoLocation location) {
 
-        sendNotification("Attendance App", String.format("You are now attend class A", key));
+        sendNotification("UITM Attendance", String.format("You are now attend a class", key));
 
         String getName = getIntent().getStringExtra("className");
 
@@ -375,7 +377,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onKeyExited(String key) {
 
-        sendNotification("Attendance App", String.format("You're now leaving class A", key));
+        sendNotification("UITM Attendance", String.format("You're now leaving a class", key));
 
     }
 

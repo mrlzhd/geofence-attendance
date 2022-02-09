@@ -20,12 +20,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setTitle("Menu");
+
 
         btn_viewClass = findViewById(R.id.btn_viewClass);
         btn_registerClass = findViewById(R.id.btn_registerClass);
         btn_classHistory = findViewById(R.id.btn_classHistory);
 
         btnLogout = (CardView) findViewById(R.id.btn_logout);
+
+
 
 
         btn_viewClass.setOnClickListener(new View.OnClickListener() {

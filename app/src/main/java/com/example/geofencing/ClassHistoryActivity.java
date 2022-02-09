@@ -46,6 +46,8 @@ public class ClassHistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_history);
 
+        getSupportActionBar().setTitle("History");
+
         recyclerView = findViewById(R.id.rc_history);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

@@ -49,6 +49,8 @@ public class ClassListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_list);
 
+        getSupportActionBar().setTitle("Class List");
+
         recyclerView = findViewById(R.id.rc_class);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

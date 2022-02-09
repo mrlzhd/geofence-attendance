@@ -32,6 +32,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        getSupportActionBar().setTitle("Register");
+
         et_firstIC = findViewById(R.id.et_firstIC);
         et_firstPass = findViewById(R.id.et_firstPass);
         btn_changefirst = findViewById(R.id.btn_changefirst);

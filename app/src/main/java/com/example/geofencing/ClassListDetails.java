@@ -28,6 +28,8 @@ public class ClassListDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_list_details);
 
+        getSupportActionBar().setTitle("Class Details");
+
 
         tv_classNameDetails = findViewById(R.id.tv_classNameDetails);
         tv_latDetails = findViewById(R.id.tv_latDetails);
@@ -53,8 +55,27 @@ public class ClassListDetails extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 snapshot.child("latitude");
 
-                if (snapshot.hasChild("latitude"))
+                if ((!snapshot.child("latitude").exists()))
                 {
+                    btn_gotoMapDetails.setVisibility(View.INVISIBLE);
+
+                    tv_statusDetails.setText("No data available for class");
+                }
+
+                else if (snapshot.child("latitude").getValue().equals(""))
+                {
+                    btn_gotoMapDetails.setVisibility(View.INVISIBLE);
+
+                    tv_statusDetails.setText("No data available for class");
+
+
+                }
+
+
+                else if (snapshot.hasChild("latitude"))
+                {
+
+
                     btn_gotoMapDetails.setVisibility(View.VISIBLE);
 
                     String latitude = snapshot.child("latitude").getValue().toString();
@@ -76,15 +97,9 @@ public class ClassListDetails extends AppCompatActivity {
                             startActivity(location);
                         }
                     });
-
-
                 }
-                else
-                {
-                    btn_gotoMapDetails.setVisibility(View.INVISIBLE);
 
-                    tv_statusDetails.setText("No data available for class");
-                }
+
             }
 
             @Override

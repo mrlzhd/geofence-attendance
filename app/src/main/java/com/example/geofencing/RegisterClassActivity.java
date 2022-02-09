@@ -41,6 +41,8 @@ public class RegisterClassActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_class);
 
+        getSupportActionBar().setTitle("Class Registration");
+
         spinner_register = findViewById(R.id.spinner_register);
 
         classNames = new ArrayList<>();

@@ -38,7 +38,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         getSupportActionBar().setTitle("Login");
-        getSupportActionBar().hide();
 
         et_loginIC = findViewById(R.id.et_loginIC);
         et_loginPass = findViewById(R.id.et_loginPass);

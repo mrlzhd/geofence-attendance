@@ -31,8 +31,8 @@ public class LandingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
 
-        getSupportActionBar().setTitle("School Lah");
-        getSupportActionBar().hide();
+        getSupportActionBar().setTitle("Geofence");
+
 
         btn_login = findViewById(R.id.btn_login);
         btn_firstlogin = findViewById(R.id.btn_firstlogin);
