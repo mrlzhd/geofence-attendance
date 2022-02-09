@@ -103,6 +103,9 @@ public class LoginActivity extends AppCompatActivity {
 
     private void AllowAccess(final String matric, final String pass) {
 
+        Paper.book().write(Prevalent.userMatricKey, matric);
+        Paper.book().write(Prevalent.userPassKey, pass);
+
         if (remember.isChecked())
         {
             Paper.book().write(Prevalent.userMatricKey, matric);
